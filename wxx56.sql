@@ -15,7 +15,7 @@ create table wx_address
    addr_desc            varchar(100)                   not null,
    user_id              integer                        not null,
    constraint PK_WX_ADDRESS primary key (id)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
 
 /*==============================================================*/
 /* Index: wx_address_PK                                         */
@@ -34,7 +34,7 @@ create table wx_basic_status
    remark               varchar(20)                    not null,
    type                 integer                        not null,
    constraint PK_WX_BASIC_STATUS primary key (id)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
 
 /*==============================================================*/
 /* Index: wx_basic_status_PK                                    */
@@ -53,7 +53,7 @@ create table wx_cart
    user_id              integer                        not null,
    num                  integer                        not null,
    constraint PK_WX_CART primary key (id)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
 
 /*==============================================================*/
 /* Index: wx_cart_PK                                            */
@@ -79,7 +79,7 @@ create table wx_delivery
    express_no           varchar(30)                    not null,
    user_id              integer                        null,
    constraint PK_WX_DELIVERY primary key (id)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
 
 /*==============================================================*/
 /* Index: wx_delivery_PK                                        */
@@ -100,7 +100,7 @@ create table wx_goods
    status_code          integer                        null,
    remark               varchar(50)                    null,
    constraint PK_WX_GOODS primary key (id)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
 
 /*==============================================================*/
 /* Index: wx_goods_PK                                           */
@@ -119,7 +119,7 @@ create table wx_menu
    code                 varchar(20)                    not null,
    menu_name            varchar(20)                    not null,
    constraint PK_WX_MENU primary key (id)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
 
 /*==============================================================*/
 /* Index: wx_menu_PK                                            */
@@ -141,7 +141,7 @@ create table wx_order
    user_id              integer                        not null,
    status_code          integer                        null,
    constraint PK_WX_ORDER primary key (id)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
 
 /*==============================================================*/
 /* Index: wx_order_PK                                           */
@@ -161,7 +161,7 @@ create table wx_order_item
    num                  numeric(10)                    not null,
    remark               varchar(50)                    null,
    constraint PK_WX_ORDER_ITEM primary key (id)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
 
 /*==============================================================*/
 /* Index: wx_order_item_PK                                      */
@@ -179,7 +179,7 @@ create table wx_role
    name                 varchar(20)                    null,
    code                 varchar(20)                    null,
    constraint PK_WX_ROLE primary key (id)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
 
 /*==============================================================*/
 /* Index: wx_role_PK                                            */
@@ -197,7 +197,7 @@ create table wx_role_menu
    role_id              integer                        not null,
    menu_id              integer                        not null,
    constraint PK_WX_ROLE_MENU primary key (id)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
 
 /*==============================================================*/
 /* Index: wx_role_menu_PK                                       */
@@ -219,7 +219,7 @@ create table wx_user
    password             varchar(20)                    null,
    remark               varchar(50)                    null,
    constraint PK_WX_USER primary key (id)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
 
 /*==============================================================*/
 /* Index: wx_user_PK                                            */
@@ -237,7 +237,7 @@ create table wx_user_role
    user_id              integer                        not null,
    role                 integer                        not null,
    constraint PK_WX_USER_ROLE primary key (id)
-);
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;;
 
 /*==============================================================*/
 /* Index: wx_user_role_PK                                       */
