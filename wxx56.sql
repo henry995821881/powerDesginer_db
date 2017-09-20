@@ -4,53 +4,7 @@
 /*==============================================================*/
 
 
-drop index if exists wx_address.wx_address_PK;
 
-drop table if exists wx_address;
-
-drop index if exists wx_basic_status.wx_basic_status_PK;
-
-drop table if exists wx_basic_status;
-
-drop index if exists wx_cart.wx_cart_PK;
-
-drop table if exists wx_cart;
-
-drop index if exists wx_delivery.wx_delivery_PK;
-
-drop table if exists wx_delivery;
-
-drop index if exists wx_goods.wx_goods_PK;
-
-drop table if exists wx_goods;
-
-drop index if exists wx_menu.wx_menu_PK;
-
-drop table if exists wx_menu;
-
-drop index if exists wx_order.wx_order_PK;
-
-drop table if exists wx_order;
-
-drop index if exists wx_order_item.wx_order_item_PK;
-
-drop table if exists wx_order_item;
-
-drop index if exists wx_role.wx_role_PK;
-
-drop table if exists wx_role;
-
-drop index if exists wx_role_menu.wx_role_menu_PK;
-
-drop table if exists wx_role_menu;
-
-drop index if exists wx_user.wx_user_PK;
-
-drop table if exists wx_user;
-
-drop index if exists wx_user_role.wx_user_role_PK;
-
-drop table if exists wx_user_role;
 
 /*==============================================================*/
 /* Table: wx_address                                            */
