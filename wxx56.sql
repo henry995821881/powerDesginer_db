@@ -292,3 +292,16 @@ create unique index wx_user_role_PK on wx_user_role (
 id ASC
 );
 
+alter table wx_address modify id integer auto_increment ;  
+alter table wx_basic_status modify id integer auto_increment ;  
+alter table wx_cart modify id integer auto_increment ;  
+alter table wx_delivery modify id integer auto_increment ;  
+alter table wx_menu modify id integer auto_increment ;  
+alter table wx_order modify id integer auto_increment ;  
+alter table wx_order_item modify id integer auto_increment ;  
+alter table wx_role modify id integer auto_increment ;  
+alter table wx_role_menu modify id integer auto_increment ;  
+alter table wx_user modify id integer auto_increment ;  
+alter table wx_user_role modify id integer auto_increment ; 
+
+
